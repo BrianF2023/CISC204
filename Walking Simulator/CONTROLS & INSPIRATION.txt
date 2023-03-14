@@ -1,0 +1,9 @@
+Controls:
+W- Forward
+S= Backwards
+A= Left
+D= Right
+Mouse= Look
+
+
+Since this is my first time ever using Unity Editor, I did not have much inspiration when it came to the design of this Level. This was more or less a means to get adjusted to the System. I was able to learn how to create my environment, including floors, walls, ceilings, and lighting (global and spot). I was also able to learn how to code Camera controls, and Movement controls, which will be very beneficial to me in the future
