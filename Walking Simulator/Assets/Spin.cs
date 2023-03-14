@@ -8,7 +8,7 @@ public class Spin : MonoBehaviour
 
     void Update()
     {
-        transform.Rotate(speed, 0, 0);
+        transform.Rotate(0, speed, 0);
 
     }
 }
