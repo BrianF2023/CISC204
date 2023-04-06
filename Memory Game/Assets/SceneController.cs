@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 
 
@@ -12,6 +14,7 @@ public class SceneController : MonoBehaviour
     public const float offsetY = 2.5f;
     [SerializeField] MemoryCard originalCard;
     [SerializeField] Sprite[] images;
+    [SerializeField] TMP_Text scoreLabel;
     void Start()
     {
         Vector3 startPos = originalCard.transform.position;
@@ -38,8 +41,26 @@ public class SceneController : MonoBehaviour
         }
         
     }
+    public void CardRevealed(MemoryCard card)
+    {
+        if (firstRevealed == null)
+        {
+            firstRevealed = card;
+        }
+        else
+        {
+            secondRevealed = card;
+            StartCoroutine(CheckMatch());
+        }
+    }
+    public void Restart()
+    {
+        SceneManager.LoadScene("SampleScene");
+    }
+
     private MemoryCard firstRevealed;
     private MemoryCard secondRevealed;
+    private int score = 0;
 
     public bool canReveal
     {
@@ -58,17 +79,22 @@ public class SceneController : MonoBehaviour
         }
         return newArray;
     }
-    public void CardRevealed(MemoryCard card)
+   
+    private IEnumerator CheckMatch()
     {
-        if (firstRevealed == null)
+        if (firstRevealed.Id == secondRevealed.Id)
         {
-            firstRevealed = card;
+            score++;
+            scoreLabel.text = ($"Score: {score}");
         }
         else
         {
-            secondRevealed = card;
-            Debug.Log("Match?" + (firstRevealed.Id == secondRevealed.Id));
+            yield return new WaitForSeconds(.5f);
+            firstRevealed.Unreveal();
+            secondRevealed.Unreveal();
         }
+        firstRevealed = null;
+        secondRevealed = null;
     }
 }
 
