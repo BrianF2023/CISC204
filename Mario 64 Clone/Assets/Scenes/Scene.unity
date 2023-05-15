@@ -2059,6 +2059,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: player
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 6688fd4bc4fb2d74e8a90530abbd1506, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: ee967742dca6ff74396fccd30984ad9b, type: 2}
+    - target: {fileID: 5866666021909216657, guid: 6688fd4bc4fb2d74e8a90530abbd1506, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6688fd4bc4fb2d74e8a90530abbd1506, type: 3}
 --- !u!1 &1799123171 stripped
@@ -2087,7 +2095,7 @@ MonoBehaviour:
   rotSpeed: 15
   moveSpeed: 6
   jumpSpeed: 15
-  gravity: -9.8
+  gravity: -5
   terminalVelocity: -10
   minFall: -1.5
 --- !u!143 &1799123174
