@@ -1,0 +1,10 @@
+For this project, that being the Build Your Own Game, I will create a 2D side-scroller, similar to the Mario clone project. This will be worked on by myself, as I have been unable to commiunicate with my group reasonably for essentially the entire semester. 
+
+The style of this game will actually be similar to a fan Mario game called Super Mario Bros. X, which essentially a retro mario style game, but with the features of many other retro games.
+Examples of this included Samus being a playable character with all her unique abilities, but in the Mario World.
+
+The perspective of this game will of course be in 3rd person, since it is a 2D side-scroller.
+
+The input will be the usual keyboard controls, WASD for movement, Space for jump, and tbh controls for abilities.
+
+What a user can expect from the game experience is a unique take on a familar topic. Similar to the fan game, the actual world will seem like its from one type of franchise, yet the character will be from a completely different type. For example (might not be final choice for me), a futuristic-space character in a medieval world.
