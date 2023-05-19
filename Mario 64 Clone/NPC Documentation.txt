@@ -1,0 +1,13 @@
+The idea for my Mini NPC are as follows:
+
+* Wanders around Level at Random
+
+* When spots Player (must be facing), it will begin to shoot Fireballs at Player
+
+* Player may recieve damage (25 hp per shot).
+
+* Player may attack NPC (Not Implemented), and once shot, npc dies.
+
+
+
+Those are my ideas for the mini npcs that I added to the test work. All the scripts are attached and should be working as intended, however it is not for me. The NPCs will not shoot at me, and I cannot seem to get their animations working despite it being the same animations as the player. 
